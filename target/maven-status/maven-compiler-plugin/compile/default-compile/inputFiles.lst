@@ -5,6 +5,7 @@
 /Users/admin/Documents/PERSONAL/taaply/taaply-backend/src/main/java/com/taaply/todo/tasks/dto/TaskFilterRequest.java
 /Users/admin/Documents/PERSONAL/taaply/taaply-backend/src/main/java/com/taaply/todo/common/HealthController.java
 /Users/admin/Documents/PERSONAL/taaply/taaply-backend/src/main/java/com/taaply/todo/auth/JwtConfig.java
+/Users/admin/Documents/PERSONAL/taaply/taaply-backend/src/main/java/com/taaply/todo/config/FlywayConfig.java
 /Users/admin/Documents/PERSONAL/taaply/taaply-backend/src/main/java/com/taaply/todo/users/UserEntity.java
 /Users/admin/Documents/PERSONAL/taaply/taaply-backend/src/main/java/com/taaply/todo/tasks/TaskEntity.java
 /Users/admin/Documents/PERSONAL/taaply/taaply-backend/src/main/java/com/taaply/todo/users/UserRepository.java
