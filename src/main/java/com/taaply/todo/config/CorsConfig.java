@@ -18,8 +18,7 @@ public class CorsConfig {
 
                 configuration.setAllowedOrigins(Arrays.asList(
                                 "http://localhost:3000",
-                                "https://your-production-domain.com" // Production (update this)
-                ));
+                                "https://taaply-web.vercel.app"));
 
                 configuration.setAllowedMethods(Arrays.asList(
                                 "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
