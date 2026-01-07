@@ -9,6 +9,7 @@ com/taaply/todo/users/UserEntity.class
 com/taaply/todo/tasks/TaskController.class
 com/taaply/todo/common/exceptions/ForbiddenException.class
 com/taaply/todo/users/UserEntity$UserEntityBuilder.class
+com/taaply/todo/common/HealthController.class
 com/taaply/todo/auth/dto/AuthResponse$AuthResponseBuilder.class
 com/taaply/todo/tasks/dto/TaskFilterRequest$TaskFilterRequestBuilder.class
 com/taaply/todo/categories/CategoryEntity$CategoryEntityBuilder.class

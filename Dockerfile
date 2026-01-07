@@ -1,11 +1,15 @@
-FROM ubuntu:latest AS build
-RUN apt-get update
-RUN apt-get install -y openjdk-17-jdk
-COPY . .
-RUN ./mvnw clean package
+FROM eclipse-temurin:17-jdk-jammy AS build
+WORKDIR /app
 
-FROM openjdk:17-jdk-slim
+COPY .mvn/ .mvn/
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:resolve
+
+COPY src ./src
+RUN ./mvnw clean package -DskipTests
+
+FROM eclipse-temurin:17-jre-jammy
+WORKDIR /app
 EXPOSE 8080
 COPY --from=build /app/target/*.jar app.jar
-
-ENTRYPOINT [ "java", "-jar", "app.jar" ]
+ENTRYPOINT ["java", "-jar", "app.jar"]
